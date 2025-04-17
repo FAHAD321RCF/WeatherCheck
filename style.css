@@ -1,0 +1,23 @@
+/* style.css */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+#weatherResult {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
