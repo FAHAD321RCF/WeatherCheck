@@ -9,15 +9,43 @@
 <body class="bg-gradient-to-r from-blue-500 to-gray-600 min-h-screen flex flex-col justify-between text-white">
   <!-- Navigation Bar -->
   <nav class="w-full bg-blue-700 p-4 shadow-md">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Weather App</h1>
-      <ul class="flex space-x-4">
-        <li><a href="#" class="hover:underline">Home</a></li>
-        <li><a href="#about" class="hover:underline">About</a></li>
-        <li><a href="#contact" class="hover:underline">Contact</a></li>
-      </ul>
+  <div class="container mx-auto flex justify-between items-center">
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold">Weather App</h1>
+
+    <!-- Navigation Links -->
+    <ul class="flex space-x-4">
+      <li><a href="#" class="hover:underline">Home</a></li>
+      <li><a href="#about" class="hover:underline">About</a></li>
+      <li><a href="#forecast" class="hover:underline">Forecast</a></li>
+      <li><a href="#contact" class="hover:underline">Contact</a></li>
+    </ul>
+
+    <!-- Search Bar -->
+    <div class="relative">
+      <input
+        type="text"
+        placeholder="Search city..."
+        class="p-2 rounded text-black"
+        id="navSearchInput"
+      />
+      <button
+        class="absolute right-0 top-0 bg-blue-600 text-white px-3 py-2 rounded-r"
+        id="navSearchButton"
+      >
+        Search
+      </button>
     </div>
-  </nav>
+
+    <!-- Dark Mode Toggle -->
+    <button
+      id="darkModeToggle"
+      class="ml-4 bg-gray-800 text-white px-3 py-2 rounded"
+    >
+      Dark Mode
+    </button>
+  </div>
+</nav>
 
   <!-- Main Content -->
   <main class="flex-grow flex flex-col items-center justify-center">
@@ -47,7 +75,7 @@
 
   <!-- Footer -->
   <footer class="w-full bg-blue-700 p-4 text-center">
-    <p>&copy; 2025 Weather App. All rights reserved.</p>
+    <p>&copy; 2023 Weather App. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
